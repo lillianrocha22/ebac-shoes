@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+header {
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+header h1 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+}
+
+.clear {
+    clear: both;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+h2 {
+    color: cornflowerblue;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 8px;
+    margin: 16px 0;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.conteudo {
+    margin: 24px auto;
+}
+
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.produto {
+    margin: 32px auto;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+.produto h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.produto button {
+    width: 100%;
+    margin-top: 16px;
+    padding: 8px;
+    border: none;
+    background-color: cornflowerblue;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul li {
+        clear: both;
+        padding: 0;
+    }
+
+    .sobre-grid,
+    .produtos-grid {
+        display: block;        
+    }
+    
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container {
+        width: 90%;
+    }
+
+    .sobre-grid {
+        display: block;        
+    }
+
+    .produtos-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+}
